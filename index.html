@@ -1,77 +1,56 @@
 <html>
+
 <head>
-<title>Joga centar Mudre</title>
-<link rel="icon" type="image/png" href="Images/mudra_title.png"/>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<meta name="viewport" content="width=device-width">
+	<title>Joga centar Mudre</title>
+	<link rel="icon" type="image/png" href="Images/mudra_title.png" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="resetstylesheet.css">
+	<meta name="viewport" content="width=device-width">
 </head>
+
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/uparrow.png"></button>
-<div class="container">
-	<div id="topholder">
-		<div id="logo"><a href="http://mudrajoga.com">JOGA CENTAR MUDRE</a></div>
-		<div class="topnav" id="myTopnav">
-			<a href="gallery.html">GALERIJA</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Images/menu.png"></a>
-		</div>
-	</div>
-	<div class="mudracontain">
-		<div class="mudra"><img src="Images/mudra.png">
-		</div>
-	</div>
-	<div class="bgimageparalax">
-	</div>
-
-	<div class="mainholder">
-		<div class="main_element_header1">INSTRUKTORI</div>
-		<div class="main_element_header2">SLAVICA</div>
-		<div class="main_element_smaller">
-			<img src="Images/slavica.png">
-		</div>
-		<div class="main_element_bigger">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	</div>
-	
-	<div class="bottom">
-		<div class="contactbox">
-			<div class="contactbox_element_left">
-				<p>info@mudrajoga.com<br/><br/>
-				+381 69 26 24 775</p>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/uparrow.png"></button>
+	<div class="container">
+		<div class="topholder">
+			<div id="logo"><a href="http://mudrajoga.com">JOGA CENTAR MUDRE</a></div>
+			<div class="topnav" id="myTopnav">
+				<!--<a href="gallery.html">GALERIJA</a>-->
+				<button onClick="scrollToElement('.main_element_header1')">GALERIJA</button
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Images/menu.png"></a>
 			</div>
-			<div class="contactbox_element_right"><a href="https://www.facebook.com/mudrajoga/"><img src="Images/facebook.png" alt="facebook"></a></div>
-			<div class="contactbox_element_right"><a href="https://www.instagram.com/mudrajoga/"><img src="Images/instagram.png" alt="instagram"></a></div>
+		</div>
+		<div class="mudracontain">
+			<div class="splash_message">DUBOKO<br/>UDAHNITE</div>
+			<div class="mudra"><img src="Images/mudra.png">
+			</div>
+		</div>
+		<div class="bgimageparalax">
+		</div>
+
+		<div class="mainholder">
+			<div class="main_element_header1">INSTRUKTORI</div>
+			<div class="main_element_header2">SLAVICA</div>
+			<div class="main_element_smaller">
+				<img src="Images/slavica.png">
+			</div>
+			<div class="main_element_bigger">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="contactbox">
+				<div class="contactbox_element_left">
+					<p>info@mudrajoga.com<br/><br/> +381 69 26 24 775</p>
+				</div>
+				<div class="contactbox_element_right"><a href="https://www.facebook.com/mudrajoga/"><img src="Images/facebook.png" alt="facebook"></a></div>
+				<div class="contactbox_element_right"><a href="https://www.instagram.com/mudrajoga/"><img src="Images/instagram.png" alt="instagram"></a></div>
+			</div>
 		</div>
 	</div>
-</div>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-</script>
 
 </body>
+<script src="main.js"></script>
+
 </html>
