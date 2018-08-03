@@ -1,0 +1,20 @@
+* {
+  &::after,
+  &::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 62.5%; /* This percentage value ensures that we are using the default browser's font size
+                      in order to let people scale it to their needs in such a way that it does not
+                      affect our rem values in further code. The reason it's 62.5% is because we needed
+                      to divide 100% by 16, which is the default font size, in order to get a value
+                      according to which we made our design, which is 10px. */
+}
+
+body {
+  box-sizing: border-box;
+}

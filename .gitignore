@@ -1,1 +1,4 @@
 *.txt
+/OLD
+/Resources
+/node_modules

@@ -1,56 +1,314 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Joga centar Mudre</title>
-	<link rel="icon" type="image/png" href="Images/mudra_title.png" />
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="resetstylesheet.css">
-	<meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/icon-font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="images/mudra.png">
+
+  <title>Mudre | Joga centar</title>
 </head>
 
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/uparrow.png"></button>
-	<div class="container">
-		<div class="topholder">
-			<div id="logo"><a href="http://mudrajoga.com">JOGA CENTAR MUDRE</a></div>
-			<div class="topnav" id="myTopnav">
-				<!--<a href="gallery.html">GALERIJA</a>-->
-				<button onClick="scrollToElement('.main_element_header1')">GALERIJA</button
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Images/menu.png"></a>
-			</div>
-		</div>
-		<div class="mudracontain">
-			<div class="splash_message">DUBOKO<br/>UDAHNITE</div>
-			<div class="mudra"><img src="Images/mudra.png">
-			</div>
-		</div>
-		<div class="bgimageparalax">
-		</div>
+  <header class="header">
+    <div class="header__logo-box">
+      <!-- <img src="images/logo-white.png" alt="Logo" class="header__logo"> -->
+    </div>
 
-		<div class="mainholder">
-			<div class="main_element_header1">INSTRUKTORI</div>
-			<div class="main_element_header2">SLAVICA</div>
-			<div class="main_element_smaller">
-				<img src="Images/slavica.png">
-			</div>
-			<div class="main_element_bigger">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</div>
+    <div class="header__text-box">
+      <div class="mudra">
+        <img class"mudra__img" src="images/mudra.png" alt="Mudra Yoga">
+      </div>
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">Joga centar Mudre</span>
+        <span class="heading-primary--sub">razvoj tela i duha</span>
+      </h1>
 
-		<div class="bottom">
-			<div class="contactbox">
-				<div class="contactbox_element_left">
-					<p>info@mudrajoga.com<br/><br/> +381 69 26 24 775</p>
-				</div>
-				<div class="contactbox_element_right"><a href="https://www.facebook.com/mudrajoga/"><img src="Images/facebook.png" alt="facebook"></a></div>
-				<div class="contactbox_element_right"><a href="https://www.instagram.com/mudrajoga/"><img src="Images/instagram.png" alt="instagram"></a></div>
-			</div>
-		</div>
-	</div>
+      <a href="##" class="btn btn--white btn--animated" onclick="scrollToElement()">Upoznajte nas</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Smirujuće iskustvo za uzbudljive ljude
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Zaljubićete se ponovo
+          </h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis, reiciendis, repellat possimus sunt repudiandae veniam, incidunt commodi facilis perferendis nisi tempore neque debitis iste at voluptatem quibusdam nulla consectetur!
+          </p>
+
+          <h3 class="heading-tertiary  u-margin-bottom-small">
+            Uradite nešto novo prvi put
+          </h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dignissimos pariatur hic, eaque alias sequi, quia dicta, officia, dolorum quis!
+          </p>
+
+          <a href="#" class="btn-text">
+            Saznajte još &rarr;
+          </a>
+        </div>
+
+        <div class="col-1-of-2">
+          <div class="composition">
+            <img src="images/meditation5.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+            <img src="images/meditation3.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+            <img src="images/meditation4.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-features">
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-world"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Istraživanje
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis, reiciendi.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-compass"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Susret sa prirodom
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis, reiciendi.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-map"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Spoznaja sebe
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis, reiciendi.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Duži život
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum veritatis, reiciendi.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-tours">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Instruktori
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1">
+                &nbsp;
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--1">
+                  Slavica
+                </span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 dana nedeljno</li>
+                  <li>Do 30 ljudi</li>
+                  <li>Sat vremena</li>
+                  <li>Napredni nivo</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Inhale the future. Exhale the past.</p>
+                  <p class="card__price-value"></p>
+                </div>
+                <a href="#" class="btn btn--white">Rezerviši mesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2">
+                &nbsp;
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--2">
+                  Tatjana
+                </span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>3 dana nedeljno</li>
+                  <li>Do 20 ljudi</li>
+                  <li>Sat vremena</li>
+                  <li>Početnički nivo</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">The body is your temple. Keep it pure and clean for the soul to reside in.</p>
+                  <p class="card__price-value"></p>
+                </div>
+                <a href="#" class="btn btn--white">Rezerviši mesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3">
+                &nbsp;
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--3">
+                  Svetlana
+                </span>
+              </h4>
+              <div class="card__details">
+                <ul>
+                  <li>Subotom</li>
+                  <li>Do 10 ljudi</li>
+                  <li>Sat vremena</li>
+                  <li>Početnički nivo</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Yoga means addition – addition of energy, strength and beauty to body, mind and soul.</p>
+                  <p class="card__price-value"></p>
+                </div>
+                <a href="#" class="btn btn--white">Rezerviši mesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="btn-top" onclick="topFunction()">
+      &uarr;
+    </div>
+
+  </main>
+
+  <!-- <section class="grid">
+      <div class="row">
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+          Col 2 of 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+          Col 2 of 4
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+          Col 3 of 4
+        </div>
+      </div>
+    </section> -->
 
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 
 </html>
