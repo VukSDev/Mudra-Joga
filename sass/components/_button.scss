@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -10,6 +11,10 @@
     backface-visibility: hidden;
     position: relative;
     font-size: $default-font-size;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -22,7 +27,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
@@ -33,6 +40,15 @@
 
     &::after {
       background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
     }
   }
 
@@ -82,17 +98,17 @@
 
 .btn-top {
   font-size: 2rem;
-  color: $color-white;
-  background-color: $color-primary;
+  color: $color-grey-dark-3;
+  background-color: $color-white;
   padding: 1rem;
   position: fixed;
   visibility: hidden;
   text-align: center;
   border-radius: 10rem;
-  width: 3rem;
-  height: 3rem;
-  bottom: 5rem;
-  right: 5rem;
+  width: 6rem;
+  height: 6rem;
+  bottom: 6.5rem;
+  right: 6.5rem;
   transition: all .5s;
   cursor: pointer;
 
@@ -115,5 +131,31 @@
   &:active {
     box-shadow: 0 .5rem 1rem rgba($color-black, .15);
     transform: translateY(0);
+  }
+
+  &__icon {
+    position: relative;
+    top: 2.5rem;
+    left: -2.2rem;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before { top: 0rem; left: 2rem; transform: rotate(45deg); }
+    &::after { top: 0rem; transform: rotate(-45deg); }
   }
 }

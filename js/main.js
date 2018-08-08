@@ -1,4 +1,5 @@
 var buttonToTop = document.querySelector(".btn-top");
+var targetElement;
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
@@ -27,8 +28,8 @@ function topFunction() {
 }
 
 // Scroll to a certain element
-function scrollToElement() {
-  document.querySelector(".section-tours").scrollIntoView({
+function scrollToElement(targetElement) {
+  document.querySelector(targetElement).scrollIntoView({
   behavior: 'smooth'
   });
 }

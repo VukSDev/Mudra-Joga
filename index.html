@@ -15,6 +15,29 @@
 </head>
 
 <body>
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">
+        &nbsp;
+      </span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="##" class="navigation__link" onclick="scrollToElement('.section-about')"><span>01</span>O nama</a></li>
+        <li class="navigation__item"><a href="##" class="navigation__link" onclick="scrollToElement('.section-tours')"><span>02</span>Instruktori</a></li>
+        <li class="navigation__item"><a href="##" class="navigation__link" onclick="scrollToElement('.section-stories')"><span>03</span>Iskustva</a></li>
+        <li class="navigation__item"><a href="##" class="navigation__link" onclick="scrollToElement('.section-book')"><span>04</span>Zakazivanje</a></li>
+        <li class="navigation__item"><a href="##" class="navigation__link" onclick="scrollToElement('.footer')"><span>05</span>Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <header class="header">
     <div class="header__logo-box">
       <!-- <img src="images/logo-white.png" alt="Logo" class="header__logo"> -->
@@ -29,7 +52,7 @@
         <span class="heading-primary--sub">razvoj tela i duha</span>
       </h1>
 
-      <a href="##" class="btn btn--white btn--animated" onclick="scrollToElement()">Upoznajte nas</a>
+      <a href="##" class="btn btn--white btn--animated" onclick="scrollToElement('.section-tours');">Upoznajte nas</a>
     </div>
   </header>
 
@@ -232,13 +255,148 @@
           </div>
         </div>
       </div>
+
+      <div class="u-center-text u-margin-bottom-huge">
+        <a href="##" class="btn btn--green">Još informacija</a>
+      </div>
+
+    </section>
+
+    <section class="section-stories">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="images/video1.mp4" type="video/mp4">
+          Your browser is not supported!
+        </video>
+      </div>
+
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Ispunjavamo vaše potrebe
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="images/nat-8.jpg" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">
+              Ana Stević
+            </figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary margin-bottom-small">
+              Sjajno sam se provela sa porodicom
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="images/nat-9.jpg" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">
+              Stefan Milić
+            </figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary margin-bottom-small">
+              Promenio mi se stil života
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-center-text u-margin-bottom-huge">
+        <a href="##" class="btn-text">Još mišljenja &rarr;</a>
+      </div>
+
+    </section>
+
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Zakažite
+                </h2>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                <label for="email" class="form__label">Email address</label>
+              </div>
+
+              <div class="form__group u-margin-bottom-medium">
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="small" name="size">
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Mala grupa
+                  </label>
+                </div>
+
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size">
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Velika grupa
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <button class="btn btn--green">
+                  Sledeći korak &rarr;
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="btn-top" onclick="topFunction()">
-      &uarr;
+      <span class="btn-top__icon">
+        &nbsp;
+      </span>
     </div>
 
   </main>
+
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <img src="images/mudra.png" alt="Logo" class="footer__logo">
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Credit to the author of the design: Jonas Schmedtmann
+          </p>
+      </div>
+    </div>
+  </footer>
 
   <!-- <section class="grid">
       <div class="row">
