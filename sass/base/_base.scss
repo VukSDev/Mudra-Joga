@@ -8,13 +8,31 @@
 }
 
 html {
-  font-size: 62.5%; /* This percentage value ensures that we are using the default browser's font size
-                      in order to let people scale it to their needs in such a way that it does not
-                      affect our rem values in further code. The reason it's 62.5% is because we needed
-                      to divide 100% by 16, which is the default font size, in order to get a value
-                      according to which we made our design, which is 10px. */
+   /* This percentage value ensures that we are using the default browser's font size
+  in order to let people scale it to their needs in such a way that it does not
+  affect our rem values in further code. The reason it's 62.5% is because we needed
+  to divide 100% by 16, which is the default font size, in order to get a value
+  according to which we made our design, which is 10px. */
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }

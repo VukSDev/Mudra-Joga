@@ -33,14 +33,34 @@
 
   &__background {
     height: 100%;
-    width: 50rem;
+    width: 200rem;
     position: fixed;
     top: 0;
-    right: -30vw;
+    right: -98vw;
     background-image: linear-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
     opacity: 0;
     transition: all .8s cubic-bezier(.5, 0, .5, 1);
+
+    @include respond(tab-land) {
+      right: -130vw;
+    }
+
+    @include respond(tab-port) {
+      right: -165vw;
+    }
+
+    @include respond(phone) {
+      right: -250vw;
+    }
+
+    @include respond(big-desktop) {
+      right: -112vw;
+    }
+
+    @include respond(full-hd) {
+      right: -120vw;
+    }
   }
 
   &__nav {
@@ -60,10 +80,22 @@
     position: absolute;
     top: 50%;
     right: -90%;
-    transform: translate(-50%, -50%);
+    transform: translate(-52%, -50%);
     list-style: none;
     text-align: center;
     width: 100%;
+
+    @include respond(tab-land) {
+      transform: translate(-55%, -50%);
+    }
+
+    @include respond(tab-port) {
+      transform: translate(-53%, -50%);
+    }
+
+    @include respond(phone) {
+      transform: translate(-57%, -50%);
+    }
   }
 
   &__item {
@@ -103,7 +135,7 @@
   // Functionality
   &__checkbox:checked ~ &__background {
     opacity: 1;
-    transform: translateX(-50rem);
+    transform: translateX(-20rem);
   }
 
   &__checkbox:checked ~ &__nav {

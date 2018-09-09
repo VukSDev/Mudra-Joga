@@ -11,11 +11,11 @@
   rgba($color-primary-dark, 0.8)),
   url("../images/meditation1.jpg");
   background-size: cover;
-  transform: skewY(-7deg);
+  // transform: skewY(-7deg);
   margin-top: -12rem;
 
   & > * {
-      transform: skewY(7deg);
+      // transform: skewY(7deg);
   }
 }
 

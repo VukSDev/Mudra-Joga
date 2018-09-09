@@ -1,7 +1,19 @@
 .mudra {
   animation: pulse 3s infinite alternate;
 
-  &__img {
-    width: 2%;
+  @include respond(tab-land) {
+    transform: scale(.6) translate(0, 15rem);
+  }
+
+  @include respond(tab-port) {
+    transform: scale(.5) translate(0, 20rem);
+  }
+
+  @include respond(phone) {
+    transform: scale(.5) translate(0, 12rem);
+  }
+
+  @include respond(big-desktop) {
+    transform: scale(.7) translate(0, 5rem);
   }
 }
